@@ -15,14 +15,14 @@ public class SaveLoad : MonoBehaviour
 
         if (File.Exists(destination)) file = File.OpenWrite(destination);
         else file = File.Create(destination);
-
+        
         BinaryFormatter bf = new BinaryFormatter();
-        //if (Singleton.Instance.coins >= 5)
-        //    bf.Serialize(file, Singleton.Instance.coins - lose);
-        //else
+        if(Singleton.Instance.coins >= 5)
+            bf.Serialize(file, Singleton.Instance.coins - lose);
+        else
             bf.Serialize(file, 0);
         file.Close();
-        //SceneManager.LoadScene("FirstScene");
+        SceneManager.LoadScene("FirstScene");
     }
 
     public void LoadFile()
@@ -33,7 +33,7 @@ public class SaveLoad : MonoBehaviour
         if (File.Exists(destination)) file = File.OpenRead(destination);
         else
         {
-            file = File.Create(destination);
+            file = File.Create(destination); 
 
             BinaryFormatter bf2 = new BinaryFormatter();
             bf2.Serialize(file, 0);
