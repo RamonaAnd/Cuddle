@@ -63,6 +63,7 @@ public class Singleton : MonoBehaviour
         addCategory3();
         changeQuestionC.changeQuestion();
         enemyToFight = null;
+        Time.timeScale = 1;
     }
 
     private void Update()

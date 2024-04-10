@@ -2468,7 +2468,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 680999466}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 4303dbd3981c8ca4ba8ece935220a19a, type: 2}
   m_CullingMode: 0
@@ -3487,7 +3487,7 @@ Transform:
   m_GameObject: {fileID: 1043995415}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 49.53, y: 0, z: 6}
+  m_LocalPosition: {x: 52.46, y: 0, z: 6}
   m_LocalScale: {x: 1, y: 20, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4747,6 +4747,7 @@ GameObject:
   - component: {fileID: 1284343546}
   - component: {fileID: 1284343547}
   - component: {fileID: 1284343548}
+  - component: {fileID: 1284343549}
   m_Layer: 0
   m_Name: GameEngine
   m_TagString: Untagged
@@ -4777,15 +4778,6 @@ MonoBehaviour:
   - {fileID: 1774549884}
   - {fileID: 1236353879}
   - {fileID: 719475607}
-  - {fileID: 2028073399}
-  - {fileID: 1560253823}
-  - {fileID: 744095018}
-  - {fileID: 1228110913}
-  - {fileID: 370562451}
-  - {fileID: 944309224}
-  - {fileID: 1798424521}
-  - {fileID: 1571838274}
-  - {fileID: 276287693}
   enemies:
   - {fileID: 7234407736973421639, guid: 9c6f02c5f5b7cb34595f77e252dd2e4e, type: 3}
   - {fileID: 6281077154838747211, guid: 9873cb9444e61864083fc81794611119, type: 3}
@@ -4857,6 +4849,29 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coins: 0
+--- !u!114 &1284343549
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1284343543}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed405af8cf6cc264a9cc0e3702a14486, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  skins:
+  - {fileID: 21300000, guid: afd793b1787964e44aa4ce39e16e5bcf, type: 3}
+  - {fileID: 21300000, guid: 446dfdc72714a4e40a7138c58fe1c2f1, type: 3}
+  - {fileID: 21300000, guid: bdcaeec5459b7314781414725fab72cd, type: 3}
+  - {fileID: 21300000, guid: 71f0957e74f285b4088f0106d60f2cb1, type: 3}
+  - {fileID: 21300000, guid: 7eeff564ba2fbbc449f275098713f210, type: 3}
+  - {fileID: 21300000, guid: f1057956967f51e49aff829a1f863a62, type: 3}
+  - {fileID: 21300000, guid: 10ddbc76ac6477248bcfd89f3c2716aa, type: 3}
+  - {fileID: 21300000, guid: dde015792022a914e990508ac19aab08, type: 3}
+  - {fileID: 21300000, guid: d5d6a87da9d33f24b908798578be3581, type: 3}
+  mainCharacter: {fileID: 680999466}
 --- !u!1 &1350994834
 GameObject:
   m_ObjectHideFlags: 0
@@ -5500,7 +5515,7 @@ MonoBehaviour:
       - m_Target: {fileID: 1540427633}
         m_TargetAssemblyTypeName: SaveLoad, Assembly-CSharp
         m_MethodName: SaveFile
-        m_Mode: 1
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -5831,7 +5846,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1552163324
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6606,7 +6621,7 @@ MonoBehaviour:
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 1920, y: 1080}
-  m_ScreenMatchMode: 0
+  m_ScreenMatchMode: 1
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96

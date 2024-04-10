@@ -39,7 +39,6 @@ public class SaveLoad : MonoBehaviour
             bf2.Serialize(file, 0);
             file.Close();
         }
-        Debug.Log(destination);
         BinaryFormatter bf = new BinaryFormatter();
         coins = (int)bf.Deserialize(file);
         file.Close();
